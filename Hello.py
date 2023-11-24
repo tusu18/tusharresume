@@ -3,6 +3,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import time
+import random
 
 #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
 
@@ -168,6 +169,7 @@ for p,l in PROJECTS.items():
     
 
 #CHat code from streamlit api
+
 
 st.subheader("Book Suggestion 📖")
 
