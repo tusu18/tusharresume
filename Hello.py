@@ -71,13 +71,13 @@ st.write("#")
 st.subheader("Experience💼")
 st.write("""
          
-         🔵 TCS(2021-): SDE
+         🔵 Tata Consultancy Services Ltd(2021-): SDE
          - 🔸 2.5 years of Experience as a Software Developer and ML Engineer.
          - 🔸 Development of Payment Solution for different clients Using AI.
          - 🔸 Worked for Rapid Labs collaberated with others to form chapter TECH FM that specialises in latest tech developmet and train other associates on them.
          
          🔵 Tata Proengage(2023-): AI Developer
-         - 🔸 Working for non profit organisation within TATA for the development of an LLM based
+         - 🔸 Working for non profit organisation and collaborating within TATA group for the development of an LLM based
            multi lingual chatbot recommender of Government Schemes.
            
          🔵 MedToureasy(2020-2020)-Data Analyst Intern
