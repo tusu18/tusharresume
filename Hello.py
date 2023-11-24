@@ -1,51 +1,100 @@
-# Copyright (c) Streamlit Inc. (2018-2022) Snowflake Inc. (2022)
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-
+from pathlib import Path
 import streamlit as st
-from streamlit.logger import get_logger
-
-LOGGER = get_logger(__name__)
+from PIL import Image
 
 
-def run():
-    st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
+curr_dir=Path(__file__).parent if "__file__" in locals() else Path.cwd()
+profile=curr_dir / "data" / "PROF.jpg"
+cssfile=curr_dir /"styles" / "main.css"
+resume_f=curr_dir / "data" / "Resume.pdf"
+
+TITLE= "Tushar Singh Resume"
+Page_IC= ":wave:"
+NAME= "Tushar Singh"
+DESC="""
+Software Developer experience in ML algorithms and an Avid Researcher
+"""
+EMAIL="tsingh1897@gmail.com"
+MEDIA_SOC={
+    "GitHub":"",
+    "LinkedIn":"https://www.linkedin.com/in/tushar-singh-4326b7188/",
+    "Others":""
+    
+}
+
+PROJECTS={
+    "MITHYA":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage",""],
+    "DCGenerator":["- Converts Snippets or Images of hand drawn poc of a app to ready to deploy website using Yolov7 for detectiona and KNN for the prediction and code generation",""],
+    "CALVISION":["- Was a novel approach on using TinyML for Onboard Detection of Top 25 Indian Cuisines Foods with Calories prediction on the portion size using skeleteon of YOLOv3 at the times later upgraded to yolov4 deployed it on Android device using SDK and Tflite","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/"],
+    "Pratbhimbh":["- A website with a Bot trained on the RNNs using RASA framework and the NeuralsMF implementation for the collaborative recommendations of the Mentors for Mentee to get the Policies and different pathway for the Startup world","https://github.com/tusu18/startup_bot"],
+    "BLURR IMAGE DETECTION APP":["- This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.. Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/"]
+    
+}
+st.set_page_config(page_title=TITLE, page_icon=Page_IC)
+#Loading csspdf prof
+
+with open(cssfile) as f:
+    st.markdown("<style>{}</style>".format(f.read()),unsafe_allow_html=True)
+with open(resume_f,"rb") as pdf:
+    pdfby=pdf.read()
+profile_pic=Image.open(profile)
+
+#---MAin
+
+col1,col2 = st.columns(2,gap="small") 
+with col1:
+    st.image(profile_pic,width=220) 
+with col2:
+    st.title(NAME)
+    st.write(DESC)
+    st.download_button(
+        label="Download Resume",
+        data=pdfby,
+        file_name=resume_f.name,
+        mime="application/octet-stream",
     )
+    st.write(EMAIL)
 
-    st.write("# Welcome to Streamlit! 👋")
+#--links and everything
+st.write("#")
+cols=st.columns(len(MEDIA_SOC))
+for index,(plt,link) in enumerate(MEDIA_SOC.items()):
+    cols[index].write(f"[{plt}]({link})")
+    
+# _    Experience
 
-    st.sidebar.success("Select a demo above.")
+st.write("#")
+st.subheader("Experience")
+st.write("""
+         
+         TCS(2021-)-SDE
+         - 2.5 years of Experience as a Software Developer and ML Engineer.
+         - Development of Payment Solution for different clients Using AI.
+         - Worked for Rapid Labs collaberated with others to form chapter that specialises in latest tech developmet.
+         
+         Tata Proengage(2023-)-AI Developer
+         - Working for non profit organisation within TATA for the development of an LLM based
+           multi lingual chatbot recommender of Government Schemes.
+           
+         MedToureasy-Data Analyst Intern
+         
+         The Spark Foundation- Data Science & Analytics Intern
+         
+         """
+    
+) 
+st.write("#")
+st.subheader("Projects")
+for p,l in PROJECTS.items():
+    st.write(f"[{p}]({l[1]})")
+    st.write(l[0])
 
-    st.markdown(
-        """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
-        **👈 Select a demo from the sidebar** to see some examples
-        of what Streamlit can do!
-        ### Want to learn more?
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        ### See more complex demos
-        - Use a neural net to [analyze the Udacity Self-driving Car Image
-          Dataset](https://github.com/streamlit/demo-self-driving)
-        - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-    """
-    )
 
 
-if __name__ == "__main__":
-    run()
+
+
+        
+          
+    
+                
+
