@@ -25,7 +25,7 @@ button_text = "Home", "MyNotes", "Blogs","Data"
 
 for text, col in zip(button_text, st.columns(len(button_text))):
     if col.button(text):
-        st.write("#")
+        st.write(text)
 EMAIL="📬tsingh1897@gmail.com"
 MEDIA_SOC={
     "🤖 GitHub":"",
