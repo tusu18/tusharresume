@@ -21,13 +21,15 @@ button_text = "Home🏚️", "MyNotes📒", "Blogs📃","Data👜"
 for text, col in zip(button_text, st.columns(len(button_text))):
     if col.button(text):
         if text=="Home🏚️":
-            switch_page("app")
+            switch_page("Hello")
         elif text == "Blogs📃":
             switch_page("Blog")
         elif text == "MyNotes📒":
             switch_page("Notes")
         elif text == "Data👜":
-            switch_page("Data")   
+            switch_page("Data")
+st.write("#")               
+st.subheader("Important Blogs")            
 st.link_button("Improve LLM responses in RAG use cases by interacting with the user","https://aws.amazon.com/blogs/machine-learning/improve-llm-responses-in-rag-use-cases-by-interacting-with-the-user/")
 st.write("#")
 
