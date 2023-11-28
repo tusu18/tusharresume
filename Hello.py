@@ -22,17 +22,17 @@ st.set_page_config(page_title=TITLE, page_icon=Page_IC)
 
 #from streamlit_extras.switch_page_button import switch_page
 from streamlit_extras.switch_page_button import switch_page
-button_text = "Home", "MyNotes", "Blogs", "Data"
+button_text = "Home🏚️", "MyNotes📒", "Blogs📃","Data👜"
 
 for text, col in zip(button_text, st.columns(len(button_text))):
     if col.button(text):
-        if text=="Home":
-            switch_page("Hello")
-        elif text == "Blogs":
+        if text=="Home🏚️":
+            switch_page("app")
+        elif text == "Blogs📃":
             switch_page("Blog")
-        elif text == "MyNotes":
+        elif text == "MyNotes📒":
             switch_page("Notes")
-        elif text == "Data":
+        elif text == "Data👜":
             switch_page("Data") 
 EMAIL="📬tsingh1897@gmail.com"
 MEDIA_SOC={
@@ -89,8 +89,8 @@ st.write("""
          
          🔵 Tata Consultancy Services Ltd(2021-): SDE
          - 🔸 2.5 years of Experience as a Software Developer and ML Engineer.
-         - 🔸 Development of Payment Solution for different clients Using AI.
-         - 🔸 Worked for Rapid Labs collaberated with others to form chapter TECH FM that specialises in latest tech developmet and train other associates on them.
+         - 🔸 Development of Payment Products for different clients.
+         - 🔸 Worked for Rapid Labs collaberated with others under a chapter TECH FM that specialises in latest tech developmet and train other associates on them.
          
          🔵 Tata Proengage(2023-): AI Developer
          - 🔸 Working for non profit organisation and collaborating within TATA group for the development of an LLM based

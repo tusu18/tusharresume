@@ -3,7 +3,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 import time
-from streamlit_option_menu import option_menu
+#
 from streamlit_extras.switch_page_button import switch_page
 curr_dir=Path(__file__).parent if "__file__" in locals() else Path.cwd()
 cssfile=curr_dir / "main.css"
@@ -17,17 +17,17 @@ with open(cssfile) as f:
 
 from streamlit_extras.switch_page_button import switch_page
 #from streamlit_extras.switch_page_button import switch_page
-button_text = "Home", "MyNotes", "Blogs", "Data"
+button_text = "Home🏚️", "MyNotes📒", "Blogs📃","Data👜"
 
 for text, col in zip(button_text, st.columns(len(button_text))):
     if col.button(text):
-        if text=="Home":
-            switch_page("Hello")
-        elif text == "Blogs":
+        if text=="Home🏚️":
+            switch_page("app")
+        elif text == "Blogs📃":
             switch_page("Blog")
-        elif text == "MyNotes":
+        elif text == "MyNotes📒":
             switch_page("Notes")
-        elif text == "Data":
+        elif text == "Data👜":
             switch_page("Data")  
 st.write("#")               
 st.subheader("Coming soon...")

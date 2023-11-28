@@ -15,24 +15,21 @@ with open(cssfile) as f:
 
 #from streamlit_extras.switch_page_button import switch_page
 from streamlit_extras.switch_page_button import switch_page
-button_text = "Home", "MyNotes", "Blogs", "Data"
+
+
+button_text = "Home🏚️", "MyNotes📒", "Blogs📃","Data👜"
 
 for text, col in zip(button_text, st.columns(len(button_text))):
     if col.button(text):
-        if text=="Home":
-            switch_page("Hello")
-        elif text == "Blogs":
+        if text=="Home🏚️":
+            switch_page("app")
+        elif text == "Blogs📃":
             switch_page("Blog")
-        elif text == "MyNotes":
+        elif text == "MyNotes📒":
             switch_page("Notes")
-        elif text == "Data":
-            switch_page("Data") 
-        st.write("#")
+        elif text == "Data👜":
+            switch_page("Data")   
 st.subheader("Notes")
-st.write("""
-         
-         ML Docs
-         
-         """
-    
-) 
+st.link_button("RL Theory","https://www.analyticsvidhya.com/blog/2021/02/introduction-to-reinforcement-learning-for-beginners/")
+st.write("#")
+st.link_button("","")
