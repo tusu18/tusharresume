@@ -33,3 +33,11 @@ st.subheader("Notes")
 st.link_button("RL Theory","https://www.analyticsvidhya.com/blog/2021/02/introduction-to-reinforcement-learning-for-beginners/")
 st.write("#")
 st.link_button("","")
+
+hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)

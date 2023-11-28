@@ -33,4 +33,12 @@ st.subheader("Important Blogs")
 st.link_button("Improve LLM responses in RAG use cases by interacting with the user","https://aws.amazon.com/blogs/machine-learning/improve-llm-responses-in-rag-use-cases-by-interacting-with-the-user/")
 st.write("#")
 
+hide_streamlit_style = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
  
