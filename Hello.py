@@ -45,8 +45,8 @@ MEDIA_SOC={
 PROJECTS={
     "📦MITHYA":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage",""],
     "📦DCGenerator":["- Converts Snippets or Images of hand drawn poc of a app to ready to deploy website using Yolov7 for detectiona and KNN for the prediction and code generation",""],
-    "📦CALVISION":["- Was a novel approach on using TinyML for Onboard Detection of Top 25 Indian Cuisines Foods with Calories prediction on the portion size using skeleteon of YOLOv3 at the times later upgraded to yolov4 deployed it on Android device using SDK and Tflite","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/"],
-    "📦Pratbhimbh":["- A website with a Bot trained on the RNNs using RASA framework and the NeuralsMF implementation for the collaborative recommendations of the Mentors for Mentee to get the Policies and different pathway for the Startup world","https://github.com/tusu18/startup_bot"],
+    "📦CALVISION":["- Was a novel approach on using TinyML for Online real time Detection of Top 50 Indian Cuisines Foods with Calories prediction on the portion size using skeleteon of YOLOv3 for detection and semantic segmentation later using regression models to predict grams for calorie calculation,at the times later upgraded to YOLOv5 deployed it on Android device using SDK and Tflite","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/"],
+    "📦Pratbhimbh":["- A website with a Bot trained on the T5 using RASA framework for acting as initial Mentor and a Q&A bot on policies of government and sevral action with a  hybrid recommendations system with modified  NeuralsMF and DroputNet for recommending mentors to mentee","https://github.com/tusu18/startup_bot"],
     "📦BLURR IMAGE DETECTION APP":["- This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.. Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/"]
     
 }
@@ -88,18 +88,24 @@ st.subheader("Experience💼")
 st.write("""
          
          🔵 Tata Consultancy Services Ltd(2021-): SDE
-         - 🔸 2.5 years of Experience as a Software Developer and ML Engineer.
+         - 🔸 2.5 years of Experience as a Software Developer building financial products.
          - 🔸 Development of Payment Products for different clients.
-         - 🔸 Worked for Rapid Labs collaberated with others under a chapter TECH FM that specialises in latest tech developmet and train other associates on them.
+         - 🔸 Worked for Rapid Labs as Researchers collaberated with others under and formed a chapter TECH FM that specialises in latest tech researches and forming POCs for our clients and train other associates on them.
          
          🔵 Tata Proengage(2023-): AI Developer
-         - 🔸 Working for non profit organisation and collaborating within TATA group for the development of an LLM based
+         - 🔸 Working with non profit organisation and collaborating within TATA group for the development of an LLM based
            multi lingual chatbot recommender of Government Schemes.
+         - 🔸 Upskilling NGO workers in using of AI tools logistic as well as in engagement.
            
          🔵 MedToureasy(2020-2020)-Data Analyst Intern
+         - 🔸 Deployed a ML model for the prediction of Donor Outcome which resulted into succesful campaign
+         - 🔸 Made and integrated Analytic Dashboard using Tableau and MongoDb on Medical Facilities in several region.
+
          
          🔵 The Spark Foundation(2020-2020)- Data Science & Analytics Intern
-         
+         - 🔸 I taught Data Science and coding to aspirants from diverse 
+            backgrounds
+        
          """
     
 ) 
@@ -110,7 +116,7 @@ on1 = st.toggle('Expand')
 if on1:
     st.write("""
         🔵 Python,ML,DL,GenAI,Java,OpenCv,Azure,Jenkins,Scala,RestApi,AWS,Flask,SQL,Data
-        Science,GAN,Yolo,Scrapy,SpringBoot,Statistics,Apache Spark,DSA,Heroku,Streamlit,Tableau
+        Science,GAN,Yolo,Scrapy,SpringBoot,Statistics,Theano,Apache Spark,DSA,Heroku,Streamlit,Tableau
         """
     
 ) 
