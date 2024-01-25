@@ -88,7 +88,7 @@ st.subheader("Experience💼")
 st.write("""
          
          🔵 Tata Consultancy Services Ltd(2021-): SDE
-         - 🔸 2.5 years of Experience as a Software Developer building financial products.
+         - 🔸 2.6 years of Experience as a Software Developer building financial products.
          - 🔸 Development of Payment Products for different clients.
          - 🔸 Worked for Rapid Labs as Researchers collaberated with others under and formed a chapter TECH FM that specialises in latest tech researches and forming POCs for our clients and train other associates on them.
          
@@ -115,7 +115,7 @@ st.subheader("Skills 🏅")
 on1 = st.toggle('Expand')
 if on1:
     st.write("""
-        🔵 Python,ML,DL,GenAI,Java,OpenCv,Azure,Jenkins,Scala,RestApi,AWS,Flask,SQL,Data
+        🔵 Python,ML,DL,GenAI,Java,OpenCv,Azure,Jenkins,Scala,RestApi,AWS,,C++,Flask,SQL,Data
         Science,GAN,Yolo,Scrapy,SpringBoot,Statistics,Theano,Apache Spark,DSA,Heroku,Streamlit,Tableau
         """
     
