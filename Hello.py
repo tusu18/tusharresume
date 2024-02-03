@@ -43,7 +43,7 @@ MEDIA_SOC={
 }
 
 PROJECTS={
-    "📦MITHYA":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage",""],
+    "📦Alambana":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage",""],
     "📦DCGenerator":["- Converts Snippets or Images of hand drawn poc of a app to ready to deploy website using Yolov7 for detectiona and KNN for the prediction and code generation",""],
     "📦CALVISION":["- Was a novel approach on using TinyML for Online real time Detection of Top 50 Indian Cuisines Foods with Calories prediction on the portion size using skeleteon of YOLOv3 for detection and semantic segmentation later using regression models to predict grams for calorie calculation,at the times later upgraded to YOLOv5 deployed it on Android device using SDK and Tflite","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/"],
     "📦Pratbhimbh":["- A website with a Bot trained on the T5 using RASA framework for acting as initial Mentor and a Q&A bot on policies of government and sevral action with a  hybrid recommendations system with modified  NeuralsMF and DroputNet for recommending mentors to mentee","https://github.com/tusu18/startup_bot"],
