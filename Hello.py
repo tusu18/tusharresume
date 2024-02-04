@@ -42,18 +42,18 @@ for text, col in zip(button_text, st.columns(len(button_text))):
             switch_page("Data") 
 EMAIL="📬tsingh1897@gmail.com"
 MEDIA_SOC={
-    "🤖 GitHub":"",
+    "🤖 GitHub":"https://github.com/tusu18",
     "🏢 LinkedIn":"https://www.linkedin.com/in/tushar-singh-4326b7188/",
     "Others":""
     
 }
 
 PROJECTS={
-    "📦Alambana":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage","",""],
-    "📦DCGenerator":["- Converts Snippets or Images of hand drawn poc of a app to ready to deploy website using Yolov7 for detectiona and KNN for the prediction and code generation","",htmldyn_pic],
-    "📦CALVISION":["- Was a novel approach on using TinyML for Onboard Detection of Top 50 Indian Cuisines Foods with Calories prediction on the portion size for Diet Feeding which was manual earlier for many Calorie Calculator app using skeleteon of YOLOv3 at the times later upgraded to yolov4 deployed it on Android device using SDK and Tflite","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/",cal_pic],
-    "📦Pratbhimbh":["- A website with a Bot trained on the T5 using RASA framework for acting as initial Mentor and a Q&A bot on policies of government and sevral action with a  hybrid recommendations system with modified  NeuralsMF and DroputNet for recommending mentors to mentee","https://github.com/tusu18/startup_bot",startup_pic],
-    "📦BLURR IMAGE DETECTION APP":["- This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.. Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/",""]
+    "📦Alambana":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage.","",""],
+    "📦DCGenerator":["- Converts Snippets or Images of hand drawn poc of an app to ready to deploy website using Yolov7 for detectiona and KNN for the prediction and code generation get handy for designers for early adaption of pages and product developmet.","",htmldyn_pic],
+    "📦CALVISION":["- Was a novel approach on using TinyML for Onboard Detection of Top 50 Indian Cuisines Foods with Calories prediction on the portion size for Diet Feeding which was manual earlier for many Calorie Calculator app using skeleteon of YOLOv3 at the times later upgraded to yolov4 deployed it on Android device using SDK and Tflite.","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/",cal_pic],
+    "📦Pratbhimbh":["- A website with a Bot trained on the T5 using RASA framework for acting as initial Mentor and a Q&A bot on policies of government and sevral action with a  hybrid recommendations system with modified  NeuralsMF and DroputNet for recommending mentors to mentee.","https://github.com/tusu18/startup_bot",startup_pic],
+    "📦BLURR IMAGE DETECTION APP":["- This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/",""]
     
 }
 
