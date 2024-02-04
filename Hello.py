@@ -9,8 +9,14 @@ import random
 
 curr_dir=Path(__file__).parent if "__file__" in locals() else Path.cwd()
 profile=curr_dir / "data" / "PROF.png"
+startuppic= curr_dir / "data" / "startupbotrec.png"
+htmldynamic= curr_dir / "data" / "htmldynamicpic.jpg"
+calvpic = curr_dir / "data" / "calvisbhendi.png"
 cssfile=curr_dir /"styles" / "main.css"
 resume_f=curr_dir / "data" / "Resume.pdf"
+cal_pic=Image.open(calvpic)
+startup_pic=Image.open(startuppic)
+htmldyn_pic=Image.open(htmldynamic)
 
 TITLE= "Tushar Singh"
 Page_IC= ":technologist:"
@@ -43,10 +49,10 @@ MEDIA_SOC={
 }
 
 PROJECTS={
-    "📦Alambana":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage",""],
-    "📦DCGenerator":["- Converts Snippets or Images of hand drawn poc of a app to ready to deploy website using Yolov7 for detectiona and KNN for the prediction and code generation",""],
-    "📦CALVISION":["- Was a novel approach on using TinyML for Online real time Detection of Top 50 Indian Cuisines Foods with Calories prediction on the portion size using skeleteon of YOLOv3 for detection and semantic segmentation later using regression models to predict grams for calorie calculation,at the times later upgraded to YOLOv5 deployed it on Android device using SDK and Tflite","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/"],
-    "📦Pratbhimbh":["- A website with a Bot trained on the T5 using RASA framework for acting as initial Mentor and a Q&A bot on policies of government and sevral action with a  hybrid recommendations system with modified  NeuralsMF and DroputNet for recommending mentors to mentee","https://github.com/tusu18/startup_bot"],
+    "📦Alambana":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage","",""],
+    "📦DCGenerator":["- Converts Snippets or Images of hand drawn poc of a app to ready to deploy website using Yolov7 for detectiona and KNN for the prediction and code generation","",htmldyn_pic],
+    "📦CALVISION":["- Was a novel approach on using TinyML for Onboard Detection of Top 50 Indian Cuisines Foods with Calories prediction on the portion size for Diet Feeding which was manual earlier for many Calorie Calculator app using skeleteon of YOLOv3 at the times later upgraded to yolov4 deployed it on Android device using SDK and Tflite","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/",cal_pic],
+    "📦Pratbhimbh":["- A website with a Bot trained on the T5 using RASA framework for acting as initial Mentor and a Q&A bot on policies of government and sevral action with a  hybrid recommendations system with modified  NeuralsMF and DroputNet for recommending mentors to mentee","https://github.com/tusu18/startup_bot",startup_pic],
     "📦BLURR IMAGE DETECTION APP":["- This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.. Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/"]
     
 }
@@ -162,9 +168,17 @@ st.write("#")
 st.subheader("Projects 📁")
 on = st.toggle('Short Description')
 for p,l in PROJECTS.items():
-    st.write(f"[{p}]({l[1]})")
-    if on:
-        st.write(l[0])
+    if not on:
+        st.write(f"[{p}]({l[1]})")
+        col1,col2 = st.columns(2,gap="large") 
+        with col2:
+            if l[2]!="":  
+                st.image(l[2],width=200) 
+        with col1:
+            st.write(l[0])
+
+    else:
+        st.write(f"[{p}]({l[1]})")
 
 #st.write("#")
 #st.subheader("Books Recommendations 📖")
