@@ -51,7 +51,7 @@ MEDIA_SOC={
 PROJECTS={
     "📦Alambana":["- Working on a Multi lingual voice based LLM solution for the Government schemes recommendation for the needful in POC and initial stage.","",""],
     "📦DCGenerator":["- Converts Snippets or Images of hand drawn poc of an app to ready to deploy website using Yolov7 for detectiona and KNN for the prediction and code generation get handy for designers for early adaption of pages and product developmet.","",htmldyn_pic],
-    "📦CALVISION":["- Was a novel approach on using TinyML for Onboard Detection of Top 50 Indian Cuisines Foods with Calories prediction on the portion size for Diet Feeding which was manual earlier for many Calorie Calculator app using skeleteon of YOLOv3 at the times later upgraded to yolov4 deployed it on Android device using SDK and Tflite.","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/",cal_pic],
+    "📦CALVISION":["- Was a novel approach on using TinyML for Onboard Detection of Top 50 Indian Cuisines Foods with Calories with calorie prediction on the portion size for diet feeding using the local segmented images by modified YOLOv4 for area-based weight estimation on camera angle conditions. Previously, calorie portion estimation was done manually by many calorie calculator apps. However, our approach significantly improved the accuracy of estimation.","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/",cal_pic],
     "📦Pratbhimbh":["- A website with a Bot trained on the T5 using RASA framework for acting as initial Mentor and a Q&A bot on policies of government and sevral action with a  hybrid recommendations system with modified  NeuralsMF and DroputNet for recommending mentors to mentee.","https://github.com/tusu18/startup_bot",startup_pic],
     "📦BLURR IMAGE DETECTION APP":["- This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/",""]
     
@@ -94,7 +94,7 @@ st.subheader("Experience💼")
 st.write("""
          
          🔵 Tata Consultancy Services Ltd(2021-): SDE
-         - 🔸 2.6 years of Experience as a Software Developer building financial products.
+         - 🔸 2.7 years of Experience as a Software Developer building financial products.
          - 🔸 Development of Payment Products for different clients.
          - 🔸 Worked for Rapid Labs as Researchers collaberated with others under and formed a chapter TECH FM that specialises in latest tech researches and forming POCs for our clients and train other associates on them.
          
@@ -253,7 +253,15 @@ if prompt := st.chat_input("Just Type Hi will suggest book I have read!"):
                 "Recursion",
                 "Project Hail Mary",
                 "One of Us is Lying",
-                "Sharp Objects"
+                "Sharp Objects",
+                "Freakonomics",
+                "Shoe Dog",
+                "Thinking Fast and Slow",
+                "Drive",
+                "Hooked",
+                "Influence",
+                "SuperIntelligence",
+                "Founders at Work"
                 
                 
             ]
