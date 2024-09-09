@@ -101,7 +101,7 @@ with col1:
     st.image(profile_pic,width=220) 
 with col2:
     st.title(NAME)
-    st.write(typewriter(text=DESC, speed=8))
+    st.write(typewriter(text=DESC, speed=10))
     st.download_button(
         label="Download Resume",
         data=pdfby,
@@ -196,10 +196,20 @@ else:
 st.write("#")
 st.subheader("Projects 📁")
 on = st.toggle('Short Description')
+st.markdown(
+    """
+    <style>
+    .css-1d391kg { /* Adjust the column class name as needed */
+        margin-right: 20px; /* Adjust the value for spacing */
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 for p,l in PROJECTS.items():
     if not on:
         st.write(f"[{p}]({l[1]})")
-        col1,col2 = st.columns([4,4]) 
+        col1,col2 = st.columns([1,2]) 
         with col2:
             if l[2]!="":  
                 st.image(l[2],width=200) 
