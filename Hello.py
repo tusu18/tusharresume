@@ -17,6 +17,18 @@ resume_f=curr_dir / "data" / "Resume.pdf"
 cal_pic=Image.open(calvpic)
 startup_pic=Image.open(startuppic)
 htmldyn_pic=Image.open(htmldynamic)
+def typewriter(text: str, speed: int):
+    tokens = text.split()
+    container = st.empty()
+    for index in range(len(tokens) + 1):
+        curr_full_text = " ".join(tokens[:index])
+        container.markdown(curr_full_text)
+        time.sleep(1 / speed)
+
+#Sample Example
+#text = "This is an example of streamlit text with typewriter effect :)"
+#speed = 10
+typewriter(text=text, speed=speed)
 
 TITLE= "Tushar Singh"
 Page_IC= ":technologist:"
@@ -24,6 +36,7 @@ NAME= "Tushar Singh"
 DESC="""
 Software Developer with bachelors in Electronics Engineering experience in AI/ML have a certain interest in NLP,RL,AGI,CV and an Avid Reader
 """
+typewriter(text=DESC, speed=10)
 st.set_page_config(page_title=TITLE, page_icon=Page_IC)
 
 #from streamlit_extras.switch_page_button import switch_page
