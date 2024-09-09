@@ -34,7 +34,7 @@ TITLE= "Tushar Singh"
 Page_IC= ":technologist:"
 NAME= "Tushar Singh"
 DESC="""
-I am a Software Developer with 3 years of experience as an ML Engineer, grounded in Electronics Engineering and driven by a passion for AI. Specializing in NLP, Reinforcement Learning, AGI, and Computer Vision, I love solving complex challenges and creating innovative solutions. As an avid reader, I continuously explore new ideas and emerging trends, blending curiosity with technical expertise to push the boundaries of AI technology."""
+I am a Software Developer with 3 years of experience as an ML Engineer and Researcher, grounded in Electronics Engineering and driven by a passion for AI. Specializing in NLP, Reinforcement Learning, AGI, and Computer Vision, I love solving complex challenges and creating innovative solutions. As an avid reader, I continuously explore new ideas and emerging trends, blending curiosity with technical expertise to push the boundaries of AI technology."""
 
 st.set_page_config(page_title=TITLE, page_icon=Page_IC)
 
@@ -61,27 +61,57 @@ MEDIA_SOC={
 }
 
 PROJECTS={
-    "📦Alambana":[""" - 🔸 Developing a **multilingual voice-enabled solution** powered by **Large Language Models (LLMs)**, incorporating **Whisper** or **Wav2Vec 2.0** for accurate **Automatic Speech Recognition (ASR)** across multiple languages.
-- 🔸 Focused on **government schemes recommendation**, utilizing **mBERT** or **XLM-RoBERTa** for **Natural Language Understanding (NLU)** to interpret user queries and context accurately.
-- 🔸 Leveraging **GPT-4 Multilingual** or **mT5** for **Natural Language Generation (NLG)**, ensuring personalized and context-aware recommendations for users in their native language.
-- 🔸 Implementing an efficient **Text-to-Speech (TTS)** system using models like **Tacotron 2** or **FastSpeech 2** to deliver clear, natural-sounding voice outputs in multiple languages.
-- 🔸 Currently in the **Proof of Concept (POC)** and **initial development stages**, focusing on optimizing **Wav2Vec 2.0** and **XLM-RoBERTa** for multilingual performance and improving speech recognition accuracy across diverse languages.
-- 🔸 Exploring **Deep Q-Networks (DQN)** or **Policy Gradient Methods** to build a dynamic recommendation engine that continuously learns from user feedback and interactions to suggest relevant government schemes.
-- 🔸 Enhancing the solution with **multimodal input capabilities** (text and voice), utilizing models like **SpeechT5** to handle both spoken and written inputs seamlessly, while personalizing responses based on the user's needs.""","",""],
+    "📦Alambana":[""" - 🔸 Developing a multilingual voice-enabled solution powered by Large Language Models (LLMs), incorporating Whisper ,Wav2Vec modified for accurate Automatic Speech Recognition (ASR) across multiple languages.
+- 🔸 Focused on government schemes recommendation, utilizing mBERT, XLM-RoBERTa for Natural Language Understanding (NLU to interpret user queries and context accurately.
+- 🔸 Leveraging GPT-4 Multilingual , mT5 for Natural Language Generation (NLG), ensuring personalized and context-aware recommendations for users in their native language.
+- 🔸 Implementing an efficient Text-to-Speech (TTS) system using models like Tacotron 2, FastSpeech 2 to deliver clear, natural-sounding voice outputs in multiple languages.
+- 🔸 Currently in the Proof of Concept (POC) and initial development stages, focusing on optimizing Wav2Vec 2.0and XLM-RoBERTa for multilingual performance and improving speech recognition accuracy across diverse languages.
+- 🔸 Exploring Deep Q-Networks (DQN), Policy Gradient Methods to build a dynamic recommendation engine that continuously learns from user feedback and interactions to suggest relevant government schemes.
+- 🔸 Enhancing the solution with multimodal input capabilities (text and voice), utilizing models like SpeechT5 to handle both spoken and written inputs seamlessly, while personalizing responses based on the user's needs.""","",""],
     "📦DCGenerator":["""
 - 🔸 Developing a framework to convert hand-drawn POC (Proof of Concept) sketches or images of app designs into deployable websites** by integrating state-of-the-art AI models and techniques.
-- 🔸 Utilizing YOLOv7** for **object detection** and **image segmentation**, ensuring precise identification and extraction of design elements from scanned or photographed hand-drawn sketches.
-- 🔸 Applying K-Nearest Neighbors (KNN)** for **feature classification and predictive modeling**, enabling the alignment of detected design elements with a predefined set of templates or UI components.
-- 🔸 Implementing an automated code generation pipeline** that translates detected design elements into clean, standards-compliant HTML/CSS/JavaScript, facilitating rapid prototyping and design iteration.
-- 🔸 Incorporating advanced image processing techniques** like **Pix2Pix** for image-to-image translation and **Semantic Segmentation** to enhance design alignment and visual fidelity.
-- 🔸 Integrating motion capture and procedural animation** to transform static designs into dynamic, interactive web elements, enhancing user engagement with responsive animations.
-- 🔸 Utilizing Reinforcement Learning (RL)** to optimize web layouts and **Neural Style Transfer** to merge hand-drawn styles with modern web aesthetics, ensuring a polished and professional appearance.
-- 🔸 Generating modular Web Components** for easy integration and reusability, along with incorporating **CSS Animations** and **Transitions** to enrich the visual appeal and responsiveness of the interface.
-- 🔸 Suggesting different animations and styles** through an **AI-driven recommendation engine**, enabling rapid deployment and showcasing of diverse design options to clients in real-time.
-- 🔸 Enabling interactive prototyping** with **Generative Adversarial Networks (GANs)** to create and demonstrate interactive prototypes based on client feedback, allowing for quick adjustments and refinements.
-- 🔸 Incorporating user testing analytics** and **A/B Testing** to continually validate and refine design conversions and animations, ensuring optimal user experience and performance.""","",htmldyn_pic],
-    "📦CALVISION":["- Was a novel approach on using TinyML for Onboard Detection of Top 50 Indian Cuisines Foods with calorie prediction on the portion size for diet intake feeding using the local segmented images by modified YOLOv4 for area-based weight estimation on camera angle conditions. Previously, calorie portion estimation was done manually by many calorie calculator apps feeding the quantity. However, our approach significantly improved the accuracy of estimation.","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/",cal_pic],
-    "📦Pratbhimbh":["- A website with a Bot trained on the T5 using RASA framework for acting as initial Mentor and a Q&A bot on policies of government and sevral action with a  hybrid recommendations system with modified  NeuralsMF and DroputNet for recommending mentors to mentee.","https://github.com/tusu18/startup_bot",startup_pic],
+- 🔸 Utilizing YOLOv7 for object detection** and image segmentation**, ensuring precise identification and extraction of design elements from scanned or photographed hand-drawn sketches.
+- 🔸 Applying K-Nearest Neighbors (KNN) for feature classification and predictive modeling, enabling the alignment of detected design elements with a predefined set of templates or UI components.
+- 🔸 Implementing an automated code generation pipeline that translates detected design elements into clean, standards-compliant HTML/CSS/JavaScript, facilitating rapid prototyping and design iteration.
+- 🔸 Incorporating advanced image processing techniques like Pix2Pix for image-to-image translation and **Semantic Segmentation to enhance design alignment and visual fidelity.
+- 🔸 Integrating motion capture and procedural animation to transform static designs into dynamic, interactive web elements, enhancing user engagement with responsive animations.
+- 🔸 Utilizing Reinforcement Learning (RL) to optimize web layouts and Neural Style Transfer** to merge hand-drawn styles with modern web aesthetics, ensuring a polished and professional appearance.
+- 🔸 Generating modular Web Components for easy integration and reusability, along with incorporating SS Animations and Transitions to enrich the visual appeal and responsiveness of the interface.
+- 🔸 Suggesting different animations and styles through an AI-driven recommendation engine, enabling rapid deployment and showcasing of diverse design options to clients in real-time.
+- 🔸 Enabling interactive prototyping with Generative Adversarial Networks (GANs) to create and demonstrate interactive prototypes based on client feedback, allowing for quick adjustments and refinements.
+- 🔸 Incorporating user testing analytics and A/B Testing** to continually validate and refine design conversions and animations, ensuring optimal user experience and performance.""","",htmldyn_pic],
+    "📦CALVISION":["""
+    - 🔸 The system eliminates the need for manual data entry, a common feature of traditional calorie calculator apps where accuracy often falls short. Instead, users can simply capture an image or video of their meal, and the system provides instant calorie predictions based on portion size, currently focused on a limited selection of foods.
+	- 🔸 Volume Estimation with DepthNet & YOLOv4: Utilized DepthNet in conjunction with YOLOv4 to estimate the volume of food items by generating depth maps from single images. The bounding box information from YOLOv4 is fused with the depth map for precise volume estimation.
+	- 🔸 Single-Image Depth Estimation: Applied MonoDepth2 for accurate depth estimation from a single image, ensuring reliable weight predictions even when the camera captures from different angles.
+    - 🔸 3D Reconstruction with NeRF & DPT: Implemented NeRF (Neural Radiance Fields) and DPT (Dense Prediction Transformer) to reconstruct 3D food models from short video sequences, enhancing the precision of volume estimation by analyzing multiple viewpoints.
+	- 🔸 Weight Prediction Models: Developed a Support Vector Regression (SVR) model and experimented with Neural Networks for weight prediction. These models extract visual features such as area and depth from the images and depth maps to accurately estimate the weight of food items.
+	- 🔸 Advanced Food Segmentation: Integrated DeepLabV3+ and Mask R-CNN for high-precision segmentation of individual food items, even when overlapping or mixed with other elements, improving the accuracy of detection and volume estimation.
+	- 🔸 Optimized for Mobile Devices: Leveraged TinyML and TensorFlow Lite with techniques such as quantization and pruning to reduce model size, enhance inference speed, and enable real-time performance on mobile devices.
+	- 🔸 Hardware Acceleration: Implemented Edge TPU and NPU acceleration, utilizing the advanced processing capabilities of modern mobile devices to achieve faster and more efficient real-time inference.
+	- 🔸 Mobile-First Real-Time Solution: Developed an entirely mobile-based system that performs on-device inference without cloud dependency, allowing users to capture images or short videos and receive instant, accurate calorie predictions directly on their devices.
+.""","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/",cal_pic],
+    "📦Pratbhimbh":["""
+    - **Website Development with Intelligent Bot**:
+    - Implemented a **T5 model** (Text-To-Text Transfer Transformer) using the **RASA framework** to create an advanced bot.
+    - Designed the bot to function as an initial mentor and provide Q&A support on government policies and procedures.
+    - Leveraged the T5 model’s capabilities for text generation to deliver accurate and contextually relevant responses to user inquiries.
+
+    - **Hybrid Recommendation System**:
+    - Adapted the Neural Matrix Factorization (NeuralsMF) model to enhance mentor recommendations.
+    - Made adjustments to the matrix factorization algorithm to better capture user preferences and interaction patterns.
+    - Achieved a **44% improvement** in top-k prediction accuracy compared to traditional collaborative filtering methods.
+    - Incorporated DropoutNet to address overfitting and improve the diversity and relevance of mentor recommendations.
+    - Utilized dropout regularization techniques to enhance the robustness and generalization of the recommendation system.
+   - Created a hybrid recommendation engine combining NeuralsMF and DropoutNet.
+    - Processed user profiles and preferences to deliver personalized mentor recommendations, enhancing the effectiveness of the mentoring process.
+
+    - **Functional Components**:
+    - **Initial Mentor Functionality**:
+    - Developed the bot to serve as the first interaction point for users, offering initial guidance and assistance with government policy-related queries.
+    - Enabled the bot to handle a broad range of topics with contextually appropriate responses.
+    - Designed the bot to answer specific questions regarding government actions.
+    - Utilized the T5 model’s advanced natural language understanding and generation capabilities to ensure accurate responses.""","https://github.com/tusu18/startup_bot",startup_pic],
     "📦BLURR IMAGE DETECTION APP":["- This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/",""]
     
 }
@@ -123,7 +153,7 @@ st.subheader("Experience💼")
 st.write("""
          
          🔵 Tata Consultancy Services Ltd(2021-): SDE
-         - 🔸 2.7 years of Experience as a Software Developer building financial products.
+         - 🔸 3 years of Experience as a Software Developer building financial products.
          - 🔸 Development of Payment Products for different clients.
          - 🔸 Worked for Rapid Labs as Researchers collaberated with others under and formed a chapter TECH FM that specialises in latest tech researches and forming POCs for our clients and train other associates on them.
          
@@ -209,7 +239,7 @@ st.markdown(
 for p,l in PROJECTS.items():
     if not on:
         st.write(f"[{p}]({l[1]})")
-        col1,col2 = st.columns([6,2]) 
+        col1,col2 = st.columns([10,2]) 
         with col2:
             if l[2]!="":  
                 st.image(l[2],width=200) 
