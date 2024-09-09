@@ -82,7 +82,7 @@ PROJECTS={
 - 🔸 Incorporating user testing analytics and A/B Testing** to continually validate and refine design conversions and animations, ensuring optimal user experience and performance.""","",htmldyn_pic],
     "📦CALVISION":["""
     - 🔸 The system eliminates the need for manual data entry, a common feature of traditional calorie calculator apps where accuracy often falls short. Instead, users can simply capture an image or video of their meal, and the system provides instant calorie predictions based on portion size, currently focused on a limited selection of foods.
-	- 🔸 Volume Estimation with DepthNet & YOLOv4: Utilized DepthNet in conjunction with YOLOv4 to estimate the volume of food items by generating depth maps from single images. The bounding box information from YOLOv4 is fused with the depth map for precise volume estimation.
+    - 🔸 Volume Estimation with DepthNet & YOLOv4: Utilized DepthNet in conjunction with YOLOv4 to estimate the volume of food items by generating depth maps from single images. The bounding box information from YOLOv4 is fused with the depth map for precise volume estimation.
 	- 🔸 Single-Image Depth Estimation: Applied MonoDepth2 for accurate depth estimation from a single image, ensuring reliable weight predictions even when the camera captures from different angles.
     - 🔸 3D Reconstruction with NeRF & DPT: Implemented NeRF (Neural Radiance Fields) and DPT (Dense Prediction Transformer) to reconstruct 3D food models from short video sequences, enhancing the precision of volume estimation by analyzing multiple viewpoints.
 	- 🔸 Weight Prediction Models: Developed a Support Vector Regression (SVR) model and experimented with Neural Networks for weight prediction. These models extract visual features such as area and depth from the images and depth maps to accurately estimate the weight of food items.
@@ -92,27 +92,24 @@ PROJECTS={
 	- 🔸 Mobile-First Real-Time Solution: Developed an entirely mobile-based system that performs on-device inference without cloud dependency, allowing users to capture images or short videos and receive instant, accurate calorie predictions directly on their devices.
 .""","https://www.linkedin.com/feed/update/urn:li:activity:6731645057734082560/",cal_pic],
     "📦Pratbhimbh":["""
-    - **Website Development with Intelligent Bot**:
-    - Implemented a **T5 model** (Text-To-Text Transfer Transformer) using the **RASA framework** to create an advanced bot.
-    - Designed the bot to function as an initial mentor and provide Q&A support on government policies and procedures.
-    - Leveraged the T5 model’s capabilities for text generation to deliver accurate and contextually relevant responses to user inquiries.
-
-    - **Hybrid Recommendation System**:
-    - Adapted the Neural Matrix Factorization (NeuralsMF) model to enhance mentor recommendations.
-    - Made adjustments to the matrix factorization algorithm to better capture user preferences and interaction patterns.
-    - Achieved a **44% improvement** in top-k prediction accuracy compared to traditional collaborative filtering methods.
-    - Incorporated DropoutNet to address overfitting and improve the diversity and relevance of mentor recommendations.
-    - Utilized dropout regularization techniques to enhance the robustness and generalization of the recommendation system.
-   - Created a hybrid recommendation engine combining NeuralsMF and DropoutNet.
-    - Processed user profiles and preferences to deliver personalized mentor recommendations, enhancing the effectiveness of the mentoring process.
-
-    - **Functional Components**:
-    - **Initial Mentor Functionality**:
-    - Developed the bot to serve as the first interaction point for users, offering initial guidance and assistance with government policy-related queries.
-    - Enabled the bot to handle a broad range of topics with contextually appropriate responses.
-    - Designed the bot to answer specific questions regarding government actions.
-    - Utilized the T5 model’s advanced natural language understanding and generation capabilities to ensure accurate responses.""","https://github.com/tusu18/startup_bot",startup_pic],
-    "📦BLURR IMAGE DETECTION APP":["- This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/",""]
+    - 🔸 Website Development with Intelligent Bot**:
+    - 🔸 Implemented a **T5 model** (Text-To-Text Transfer Transformer) using the **RASA framework** to create an advanced bot.
+    - 🔸 Designed the bot to function as an initial mentor and provide Q&A support on government policies and procedures.
+    - 🔸 Leveraged the T5 model’s capabilities for text generation to deliver accurate and contextually relevant responses to user inquiries.
+    - 🔸 **Hybrid Recommendation System**:
+    - 🔸 Adapted the Neural Matrix Factorization (NeuralsMF) model to enhance mentor recommendations.
+    - 🔸 Made adjustments to the matrix factorization algorithm to better capture user preferences and interaction patterns.
+    - 🔸 Achieved a **44% improvement** in top-k prediction accuracy compared to traditional collaborative filtering methods.
+    - 🔸 Incorporated DropoutNet to address overfitting and improve the diversity and relevance of mentor recommendations.
+    - 🔸 Utilized dropout regularization techniques to enhance the robustness and generalization of the recommendation system.
+    - 🔸 Created a hybrid recommendation engine combining NeuralsMF and DropoutNet.
+    - 🔸 Processed user profiles and preferences to deliver personalized mentor recommendations, enhancing the effectiveness of the mentoring process.
+    - 🔸**Functional Components**:
+    - 🔸 Developed the bot to serve as the first interaction point for users, offering initial guidance and assistance with government policy-related queries.
+    - 🔸 Enabled the bot to handle a broad range of topics with contextually appropriate responses.
+    - 🔸 Designed the bot to answer specific questions regarding government actions.
+    - 🔸 Utilized the T5 model’s advanced natural language understanding and generation capabilities to ensure accurate responses.""","https://github.com/tusu18/startup_bot",startup_pic],
+    "📦BLURR IMAGE DETECTION APP":["- 🔸 This project is made on Blur dataset by CERT and it is deployed on heroku using streamlitI have extracted several features from the images using HPF such as Sobel,Laplace,Scharr better known to detect high deviation or corner since the blur images are too smooth.Using these features and stratifying the data as the data set was quite imbalance i have fitted the model using various model such as XgbClassifier,TReeClassifier,KNN,SVC","https://blurredapp.herokuapp.com/",""]
     
 }
 
@@ -152,11 +149,31 @@ st.write("#")
 st.subheader("Experience💼")
 st.write("""
          
-         🔵 Tata Consultancy Services Ltd(2021-): SDE
-         - 🔸 3 years of Experience as a Software Developer building financial products.
-         - 🔸 Development of Payment Products for different clients.
-         - 🔸 Worked for Rapid Labs as Researchers collaberated with others under and formed a chapter TECH FM that specialises in latest tech researches and forming POCs for our clients and train other associates on them.
-         
+         🔵 Tata Consultancy Services Ltd(2021-2024): SDE/Researcher
+         - 🔸 **Automated Cheque Signature Verification**:
+  - 🔸 Designed and implemented a robust cheque signature verification system.
+  - 🔸 Achieved an **Equal Error Rate (EER)** reduction to **2.4%**.
+  - 🔸 Decreased manual intervention by **40%** using **Convolutional Neural Networks (CNNs)** and **image enhancement algorithms**.
+  
+- 🔸**TableNet 2.0**:
+  - 🔸 Contributed to **TableNet 2.0**, achieving precision scores of **0.97** for table detection and **0.94** for table extraction and structure detection.
+  - 🔸 Addressed challenges with both bordered and borderless tables using advanced deep learning models.
+  - 🔸 Documented findings in a white paper and deployed the solution as part of the TCS AI module for clients including **Assa Abloy** and **Bosch**.
+
+- 🔸 **Floor Plan Analysis and 3D Reconstruction**:
+  - 🔸 Utilized **Masked Fast R-CNN** for precise instance segmentation and object detection, enabling accurate identification of architectural elements.
+  - 🔸 Integrated **Transformers** to enhance model understanding of complex architectural layouts and relationships between elements.
+  - 🔸 Focused on detecting features such as **windows**, **doors**, and **room layouts** using advanced **semantic segmentation** techniques.
+  - 🔸 Developed a model to convert **2D floor plans** into **3D visualizations** with **photogrammetry** and **neural rendering** techniques, facilitating rapid and interactive design review.
+
+- 🔸 **Leadership and Mentorship**:
+  - 🔸 Founded and led the **Tech FM** chapter, providing **AI/ML** mentorship and training to interns and executives, promoting knowledge transfer and skill development.
+
+- 🔸 **CI/CD Pipeline Management**:
+ - 🔸 Created and maintained **CI/CD pipelines** using Jenkins, automating build, test, and deployment processes for reliable software releases.
+
+- 🔸 **Technical Troubleshooting**:
+  - 🔸 Led technical troubleshooting and performance tuning, enhancing system scalability and performance to manage increasing transaction volumes efficiently.
          🔵 Tata Proengage(2023-): AI Developer
          - 🔸 Working with non profit organisation and collaborating within TATA group for the development of an LLM based
            multi lingual chatbot recommender of Government Schemes.
