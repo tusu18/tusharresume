@@ -52,11 +52,11 @@ for text, col in zip(button_text, st.columns(len(button_text))):
             switch_page("Notes")
         elif text == "Data👜":
             switch_page("Data") 
-EMAIL="📬tsingh1897@gmail.com"
+EMAIL="📬tsingh98@umd.edu"
 MEDIA_SOC={
     "🤖 GitHub":"https://github.com/tusu18",
     "🏢 LinkedIn":"https://www.linkedin.com/in/tushar-singh-4326b7188/",
-    "Others":""
+    "Phone no":"+1 240 462 8779"
     
 }
 
@@ -128,7 +128,7 @@ with col1:
     st.image(profile_pic,width=220) 
 with col2:
     st.title(NAME)
-    st.write(typewriter(text=DESC, speed=10))
+    st.write(typewriter(text=DESC, speed=14))
     st.download_button(
         label="Download Resume",
         data=pdfby,
@@ -154,28 +154,23 @@ st.write("""
      - 🔸 Designed and implemented a robust cheque signature verification system.
      - 🔸 Achieved an **Equal Error Rate (EER)** reduction to **2.4%**.
      - 🔸 Decreased manual intervention by **40%** using **Convolutional Neural Networks (CNNs)** and **image enhancement algorithms**.
-  
        **TableNet 2.0**:
      - 🔸 Contributed to **TableNet 2.0**, achieving precision scores of **0.97** for table detection and **0.94** for table extraction and structure detection.
      - 🔸 Addressed challenges with both bordered and borderless tables using advanced deep learning models.
      - 🔸 Documented findings in a white paper and deployed the solution as part of the TCS AI module for clients including **Assa Abloy** and **Bosch**.
-
        **Floor Plan Analysis and 3D Reconstruction**:
      - 🔸 Utilized **Masked Fast R-CNN** for precise instance segmentation and object detection, enabling accurate identification of architectural elements.
      - 🔸 Integrated **Transformers** to enhance model understanding of complex architectural layouts and relationships between elements.
      - 🔸 Focused on detecting features such as **windows**, **doors**, and **room layouts** using advanced **semantic segmentation** techniques.
      - 🔸 Developed a model to convert **2D floor plans** into **3D visualizations** with **photogrammetry** and **neural rendering** techniques, facilitating rapid and interactive design review.
-
        **Leadership and Mentorship**:
      - 🔸 Founded and led the **Tech FM** chapter, providing **AI/ML** mentorship and training to interns and executives, promoting knowledge transfer and skill development.
-
        **CI/CD Pipeline Management**:
      - 🔸 Created and maintained **CI/CD pipelines** using Jenkins, automating build, test, and deployment processes for reliable software releases.
-
        **Technical Troubleshooting**:
      - 🔸 Led technical troubleshooting and performance tuning, enhancing system scalability and performance to manage increasing transaction volumes efficiently.
     
-    🔵 Tata Proengage(2023-): AI Developer
+    🔵 Tata Proengage(2023-2024): AI Developer
      - 🔸 Working with non profit organisation and collaborating within TATA group for the development of an LLM based
            multi lingual chatbot recommender of Government Schemes.
      - 🔸 Upskilling NGO workers in using of AI tools logistic as well as in engagement.
