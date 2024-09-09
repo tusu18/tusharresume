@@ -34,8 +34,7 @@ TITLE= "Tushar Singh"
 Page_IC= ":technologist:"
 NAME= "Tushar Singh"
 DESC="""
-Software Developer with bachelors in Electronics Engineering experience in AI/ML have a certain interest in NLP,RL,AGI,CV and an Avid Reader
-"""
+I am a Software Developer with 3 years of experience as an ML Engineer, grounded in Electronics Engineering and driven by a passion for AI. Specializing in NLP, Reinforcement Learning, AGI, and Computer Vision, I love solving complex challenges and creating innovative solutions. As an avid reader, I continuously explore new ideas and emerging trends, blending curiosity with technical expertise to push the boundaries of AI technology."""
 
 st.set_page_config(page_title=TITLE, page_icon=Page_IC)
 
@@ -85,7 +84,7 @@ with col1:
     st.image(profile_pic,width=220) 
 with col2:
     st.title(NAME)
-    st.write(typewriter(text=DESC, speed=10))
+    st.write(typewriter(text=DESC, speed=8))
     st.download_button(
         label="Download Resume",
         data=pdfby,
