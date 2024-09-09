@@ -28,7 +28,7 @@ def typewriter(text: str, speed: int):
 #Sample Example
 #text = "This is an example of streamlit text with typewriter effect :)"
 #speed = 10
-typewriter(text=text, speed=speed)
+#typewriter(text=text, speed=speed)
 
 TITLE= "Tushar Singh"
 Page_IC= ":technologist:"
