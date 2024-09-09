@@ -199,7 +199,7 @@ on = st.toggle('Short Description')
 for p,l in PROJECTS.items():
     if not on:
         st.write(f"[{p}]({l[1]})")
-        col1,col2 = st.columns(2,gap="large") 
+        col1,col2 = st.columns(4,gap="large") 
         with col2:
             if l[2]!="":  
                 st.image(l[2],width=200) 
