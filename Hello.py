@@ -36,7 +36,7 @@ NAME= "Tushar Singh"
 DESC="""
 Software Developer with bachelors in Electronics Engineering experience in AI/ML have a certain interest in NLP,RL,AGI,CV and an Avid Reader
 """
-typewriter(text=DESC, speed=10)
+
 st.set_page_config(page_title=TITLE, page_icon=Page_IC)
 
 #from streamlit_extras.switch_page_button import switch_page
@@ -85,7 +85,7 @@ with col1:
     st.image(profile_pic,width=220) 
 with col2:
     st.title(NAME)
-    st.write(DESC)
+    st.write(typewriter(text=DESC, speed=10))
     st.download_button(
         label="Download Resume",
         data=pdfby,
