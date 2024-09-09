@@ -56,7 +56,7 @@ EMAIL="📬tsingh98@umd.edu"
 MEDIA_SOC={
     "🤖 GitHub":"https://github.com/tusu18",
     "🏢 LinkedIn":"https://www.linkedin.com/in/tushar-singh-4326b7188/",
-    "Phone no":"+1 240 462 8779"
+    "✅ Phone no":"+1-240-462-8779"
     
 }
 
