@@ -145,7 +145,7 @@ for index,(plt,link) in enumerate(MEDIA_SOC.items()):
         phone_number = "+1-240-462-8779"
 
 # Display the phone number as a clickable link
-        cols[index].write(f"Click to dial: [Call {phone_number}](tel:{phone_number})")
+        cols[index].write(f"[✅ Phone no](tel:{phone_number})")
     else:    
         cols[index].write(f"[{plt}]({link})")
     
