@@ -142,7 +142,7 @@ st.write("#")
 cols=st.columns(len(MEDIA_SOC))
 for index,(plt,link) in enumerate(MEDIA_SOC.items()):
     if plt=="✅ Phone no":
-        cols[index].write(f"Click to dial: [Call {phone_number}](tel:{phone_number})")
+        cols[index].write(f"Click to dial: [Call {"+1-240-462-8779"}](tel:{"+1-240-462-8779"})")
     else:
         cols[index].write(f"[{plt}]({link})")
     
