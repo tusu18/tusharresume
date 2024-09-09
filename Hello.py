@@ -209,7 +209,7 @@ st.markdown(
 for p,l in PROJECTS.items():
     if not on:
         st.write(f"[{p}]({l[1]})")
-        col1,col2 = st.columns([1,2]) 
+        col1,col2 = st.columns([6,2]) 
         with col2:
             if l[2]!="":  
                 st.image(l[2],width=200) 
