@@ -31,6 +31,20 @@ def typewriter(text: str, speed: int):
 #typewriter(text=text, speed=speed)
 
 
+
+    # Clear loading message
+    loading_placeholder.empty()
+
+# Display loading screen first
+show_loading_page()
+
+TITLE= "Tushar Singh"
+Page_IC= ":technologist:"
+NAME= "Tushar Singh"
+DESC="""
+I am a Software Developer with 3 years of experience as an ML Engineer and Researcher, grounded in Electronics Engineering and driven by a passion for AI. Specializing in NLP, Reinforcement Learning, AGI, and Computer Vision, I love solving complex challenges and creating innovative solutions. As an avid reader, I continuously explore new ideas and emerging trends, blending curiosity with technical expertise to push the boundaries of AI technology."""
+
+st.set_page_config(page_title=TITLE, page_icon=Page_IC)
 def show_loading_page():
     loading_placeholder = st.empty()
 
@@ -48,20 +62,6 @@ def show_loading_page():
             loading_placeholder.text(message)
             time.sleep(1.5)  # Simulate delay for each message
             
-    # Clear loading message
-    loading_placeholder.empty()
-
-# Display loading screen first
-show_loading_page()
-
-TITLE= "Tushar Singh"
-Page_IC= ":technologist:"
-NAME= "Tushar Singh"
-DESC="""
-I am a Software Developer with 3 years of experience as an ML Engineer and Researcher, grounded in Electronics Engineering and driven by a passion for AI. Specializing in NLP, Reinforcement Learning, AGI, and Computer Vision, I love solving complex challenges and creating innovative solutions. As an avid reader, I continuously explore new ideas and emerging trends, blending curiosity with technical expertise to push the boundaries of AI technology."""
-
-st.set_page_config(page_title=TITLE, page_icon=Page_IC)
-
 #from streamlit_extras.switch_page_button import switch_page
 from streamlit_extras.switch_page_button import switch_page
 button_text = "Home🏚️", "MyNotes📒", "Blogs📃","Data👜"
