@@ -17,6 +17,33 @@ resume_f=curr_dir / "data" / "Resume.pdf"
 cal_pic=Image.open(calvpic)
 startup_pic=Image.open(startuppic)
 htmldyn_pic=Image.open(htmldynamic)
+spinner_css = """
+    <style>
+    .spinner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .spinner {
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    </style>
+    <div class="spinner-container">
+        <div class="spinner"></div>
+    </div>
+"""
+
+# Function for Typewriter Effect
 def typewriter(text: str, speed: int):
     tokens = text.split()
     container = st.empty()
@@ -24,6 +51,32 @@ def typewriter(text: str, speed: int):
         curr_full_text = " ".join(tokens[:index])
         container.markdown(curr_full_text)
         time.sleep(1 / speed)
+
+# Loading page simulation with animation
+def show_loading_page():
+    loading_placeholder = st.empty()
+    
+    # Show spinner animation
+    loading_placeholder.markdown(spinner_css, unsafe_allow_html=True)
+
+    # Simulate boot-up progress
+    boot_messages = [
+        "Booting OS...",
+        "Loading core modules...",
+        "Initializing AI systems...",
+        "Connecting to servers...",
+        "Finalizing setup...",
+    ]
+
+    for i, message in enumerate(boot_messages):
+        time.sleep(1.5)
+        loading_placeholder.write(f"### {message}")
+
+    time.sleep(2)
+    loading_placeholder.empty()
+
+# Display Loading Screen First
+show_loading_page()
 
 #Sample Example
 #text = "This is an example of streamlit text with typewriter effect :)"
