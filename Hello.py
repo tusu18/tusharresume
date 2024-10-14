@@ -32,8 +32,7 @@ def typewriter(text: str, speed: int):
 
 
 
-    # Clear loading message
-    loading_placeholder.empty()
+
 
 # Display loading screen first
 
