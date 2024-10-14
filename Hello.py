@@ -36,7 +36,7 @@ def typewriter(text: str, speed: int):
     loading_placeholder.empty()
 
 # Display loading screen first
-show_loading_page()
+
 
 TITLE= "Tushar Singh"
 Page_IC= ":technologist:"
@@ -61,7 +61,7 @@ def show_loading_page():
         for message in boot_messages:
             loading_placeholder.text(message)
             time.sleep(1.5)  # Simulate delay for each message
-            
+show_loading_page()           
 #from streamlit_extras.switch_page_button import switch_page
 from streamlit_extras.switch_page_button import switch_page
 button_text = "Home🏚️", "MyNotes📒", "Blogs📃","Data👜"
