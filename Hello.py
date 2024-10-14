@@ -20,7 +20,7 @@ htmldyn_pic=Image.open(htmldynamic)
 
 rocket_img_url = "https://www.rawpixel.com/image/7729511/png-people-cartoon"
 
-# Add custom CSS and JS for the rocket animation
+# Add custom CSS and JS for the rocket animationl
 rocket_css = """
 <style>
 #MainMenu {visibility: hidden;}
