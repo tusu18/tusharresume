@@ -30,6 +30,30 @@ def typewriter(text: str, speed: int):
 #speed = 10
 #typewriter(text=text, speed=speed)
 
+
+def show_loading_page():
+    loading_placeholder = st.empty()
+
+    # Simulating a boot-up OS effect with messages
+    boot_messages = [
+        "Booting OS...",
+        "Initializing core systems...",
+        "Loading configurations...",
+        "Starting services...",
+        "Almost there..."
+    ]
+    
+    with st.spinner("Starting OS..."):
+        for message in boot_messages:
+            loading_placeholder.text(message)
+            time.sleep(1.5)  # Simulate delay for each message
+            
+    # Clear loading message
+    loading_placeholder.empty()
+
+# Display loading screen first
+show_loading_page()
+
 TITLE= "Tushar Singh"
 Page_IC= ":technologist:"
 NAME= "Tushar Singh"
