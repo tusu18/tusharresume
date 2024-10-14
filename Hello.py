@@ -17,33 +17,112 @@ resume_f=curr_dir / "data" / "Resume.pdf"
 cal_pic=Image.open(calvpic)
 startup_pic=Image.open(startuppic)
 htmldyn_pic=Image.open(htmldynamic)
-spinner_css = """
-    <style>
-    .spinner-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .spinner {
-        border: 16px solid #f3f3f3;
-        border-top: 16px solid #3498db;
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        animation: spin 2s linear infinite;
-    }
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-    </style>
-    <div class="spinner-container">
-        <div class="spinner"></div>
-    </div>
+
+rocket_img_url = "https://www.rawpixel.com/image/7729511/png-people-cartoon"
+
+# Add custom CSS and JS for the rocket animation
+rocket_css = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+* {
+    font-family: 'Readex Pro';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e2d;
+    color: white;
+    font-weight: 400;
+}
+
+#rocket {
+    position: fixed;
+    bottom: -100px;
+    right: 20px;
+    width: 50px;
+    z-index: 1000;
+    transition: transform 0.5s ease-in-out;
+}
+
+#rocket img {
+    width: 100%;
+}
+
+/* Scroll animation for rocket */
+body {
+    scroll-behavior: smooth;
+}
+
+.scroll-rocket {
+    transform: translateY(-1500px);
+}
+
+/* Smooth transition for all elements */
+* {
+    transition: all 0.3s ease;
+}
+
+button, a, h1, h2, h3, h4, h5, p {
+    transition: transform 0.3s ease;
+}
+
+button:hover, a:hover, h1:hover, h2:hover, h3:hover, h4:hover, p:hover {
+    transform: scale(1.05);
+}
+
+/* Adding subtle shadow effect */
+button, a, h1, h2, h3, h4, h5, p {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, a:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #4636d3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #372ec7;
+}
+</style>
 """
 
-# Function for Typewriter Effect
+rocket_js = f"""
+<script>
+window.addEventListener('scroll', function() {{
+    var rocket = document.getElementById('rocket');
+    if (window.scrollY > 200) {{
+        rocket.classList.add('scroll-rocket');
+    }} else {{
+        rocket.classList.remove('scroll-rocket');
+    }}
+}});
+</script>
+"""
+
+# Injecting the CSS and JS in the app using markdown
+st.markdown(rocket_css, unsafe_allow_html=True)
+st.markdown(rocket_js, unsafe_allow_html=True)
+
+# Adding the rocket image dynamically into the app
+st.markdown(f"""
+    <div id="rocket">
+        <img src="{rocket_img_url}" alt="Rocket">
+    </div>
+""", unsafe_allow_html=True)
+
 def typewriter(text: str, speed: int):
     tokens = text.split()
     container = st.empty()
@@ -51,32 +130,6 @@ def typewriter(text: str, speed: int):
         curr_full_text = " ".join(tokens[:index])
         container.markdown(curr_full_text)
         time.sleep(1 / speed)
-
-# Loading page simulation with animation
-def show_loading_page():
-    loading_placeholder = st.empty()
-    
-    # Show spinner animation
-    loading_placeholder.markdown(spinner_css, unsafe_allow_html=True)
-
-    # Simulate boot-up progress
-    boot_messages = [
-        "Booting OS...",
-        "Loading core modules...",
-        "Initializing AI systems...",
-        "Connecting to servers...",
-        "Finalizing setup...",
-    ]
-
-    for i, message in enumerate(boot_messages):
-        time.sleep(1.5)
-        loading_placeholder.write(f"### {message}")
-
-    time.sleep(2)
-    loading_placeholder.empty()
-
-# Display Loading Screen First
-show_loading_page()
 
 #Sample Example
 #text = "This is an example of streamlit text with typewriter effect :)"
