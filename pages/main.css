@@ -1,43 +1,130 @@
-/* Scrolling animation */
+/* Global styles */
+body {
+  background: linear-gradient(45deg, #1DB954, #191414);
+  animation: gradientBG 15s ease infinite;
+  color: white;
+  font-family: 'Circular', Arial, sans-serif;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+/* Main page styles */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.play-button {
+  font-size: 24px;
+  padding: 20px 40px;
+  background-color: #1DB954;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #1ED760;
+  transform: scale(1.05);
+}
+
+/* Content page styles */
+.stApp {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.tile {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Animations */
 @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .animate-on-scroll {
+  from {
     opacity: 0;
-    animation: fadeInUp 0.6s ease-out forwards;
+    transform: translateY(20px);
   }
-  
-  /* Tile-like structure */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.staggered-animation > * {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.staggered-animation > *:nth-child(1) { animation-delay: 0.1s; }
+.staggered-animation > *:nth-child(2) { animation-delay: 0.2s; }
+.staggered-animation > *:nth-child(3) { animation-delay: 0.3s; }
+.staggered-animation > *:nth-child(4) { animation-delay: 0.4s; }
+.staggered-animation > *:nth-child(5) { animation-delay: 0.5s; }
+
+/* Additional styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #1DB954;
+}
+
+a {
+  color: #1DB954;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1ED760;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #191414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1DB954;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1ED760;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   .tile {
-    background-color: #f0f0f0;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    padding: 15px;
   }
   
-  .tile:hover {
-    transform: translateY(-5px);
+  .play-button {
+    font-size: 20px;
+    padding: 15px 30px;
   }
-  
-  /* Staggered animation delay */
-  .staggered-animation > * {
-    opacity: 0;
-    animation: fadeInUp 0.6s ease-out forwards;
-  }
-  
-  .staggered-animation > *:nth-child(1) { animation-delay: 0.1s; }
-  .staggered-animation > *:nth-child(2) { animation-delay: 0.2s; }
-  .staggered-animation > *:nth-child(3) { animation-delay: 0.3s; }
-  .staggered-animation > *:nth-child(4) { animation-delay: 0.4s; }
-  .staggered-animation > *:nth-child(5) { animation-delay: 0.5s; }
-  
+}
