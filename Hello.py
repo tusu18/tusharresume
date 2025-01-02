@@ -276,7 +276,7 @@ st.write("""
 # Skills
 st.write("#")
 st.subheader("Skills 🏅")
-on1 = st.toggle('Expand')
+on1 = st.toggle('Expand ')
 if on1:
     st.write("""
         🔵 Python,ML,DL,GenAI,Java,OpenCv,Azure,Jenkins,Scala,RestApi,AWS,,C++,Flask,SQL,Data
