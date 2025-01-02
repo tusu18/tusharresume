@@ -214,7 +214,7 @@ st.markdown('<div class="animate-on-scroll">', unsafe_allow_html=True)
 st.subheader("Projects 📁")
 st.markdown('</div>', unsafe_allow_html=True)
 
-on = st.toggle('Short Description')
+on = st.toggle('Short Description ')
 st.markdown('<div class="staggered-animation">', unsafe_allow_html=True)
 for p, l in PROJECTS.items():
     st.markdown('<div class="tile">', unsafe_allow_html=True)
